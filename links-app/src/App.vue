@@ -5,6 +5,7 @@ import ProfileAvatar from './components/ProfileAvatar.vue'
 import LinkButton from './components/LinkButton.vue'
 import ThemeToggle from './components/ThemeToggle.vue'
 import ProfileCard from './components/ProfileCard.vue'
+import SocialIcons from './components/SocialIcons.vue'
 
 const links = [
   { label: 'Portfolio', url: 'https://www.behance.net/joshuaschramm', icon: 'mdi-briefcase', colorClass: 'hover-magenta' },
@@ -44,6 +45,8 @@ function toggleTheme() {
             :isDark="isDark"
           />
         </div>
+
+        <SocialIcons :isDark="isDark" />
       </ProfileCard>
     </v-main>
   </v-app>
